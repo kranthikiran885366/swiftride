@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-brand-50: #EEF2FF;
+  --color-brand-100: #E0E7FF;
+  --color-brand-200: #C7D2FE;
+  --color-brand-300: #A5B4FC;
+  --color-brand-400: #818CF8;
+  --color-brand-500: #6366F1;
+  --color-brand-600: #4F46E5;
+  --color-brand-700: #4338CA;
+  --color-brand-800: #3730A3;
+  --color-brand-900: #312E81;
+  --color-brand-950: #1E1B4B;
+
+  --color-surface-default: #FFFFFF;
+  --color-surface-muted: #F8FAFC;
+  --color-surface-subtle: #F1F5F9;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-900 bg-surface-muted;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+/* Custom Advanced UI Patterns */
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-xl;
+}
+
+.technical-grid {
+  background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.neo-brutalist-border {
+  @apply border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+}

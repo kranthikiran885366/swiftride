@@ -1,0 +1,9 @@
+{
+  "name": "SwiftRide Platform",
+  "description": "A production-grade, role-based ride-sharing platform management system and corporate website.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ]
+}
